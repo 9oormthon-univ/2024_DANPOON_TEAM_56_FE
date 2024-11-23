@@ -27,9 +27,9 @@ function Home() {
     ];
     
     const [userData, setUserData] = useState({
-        nickname: "",
         id: "",
-        profileImage: "",
+        nickname: "",
+        profileImageUrl: "",
     });
 
     const fetchUserInfo = async () => {
@@ -41,8 +41,8 @@ function Home() {
                     withCredentials: true,
                 }
             );
-            const { nickname, id, profileImage } = response.data;
-            setUserData({ nickname, id, profileImage });
+            const { id, nickname, profileImageUrl } = response.data;
+            setUserData({ id, nickname, profileImageUrl });
         } catch (error) {
             console.error("Failed to fetch user info:", error);
         }
@@ -56,7 +56,7 @@ function Home() {
     return (
         <div className={styles.frame}>
             <UserInfo 
-                src={userData.profileImage}
+                src={userData.profileImageUrl}
                 name = {userData.nickname}
                 date="2024.11.20" 
                 taskNum={6} 

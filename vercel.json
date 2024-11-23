@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/:path*",
+        "destination": "https://devsolfe.site/api/:path*"
+      },
+      {
+        "source": "/api/:path*/",
+        "destination": "https://devsolfe.site/api/:path*/"
+      }
+    ]
+}

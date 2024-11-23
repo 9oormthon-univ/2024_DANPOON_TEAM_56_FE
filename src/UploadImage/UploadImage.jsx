@@ -6,6 +6,8 @@ import commentIcon from "../images/comment.png";
 import submitIcon from "../images/submit.png";
 
 function UploadImage() {
+
+  const user = "Tom"
   const [image, setImage] = useState(null);
   const [liked, setLiked] = useState(false);
   const [isCommenting, setIsCommenting] = useState(false);
@@ -109,7 +111,8 @@ function UploadImage() {
         <div className={styles.commentList}>
           {comments.map((comment, index) => (
             <div key={index} className={styles.comment}>
-              {comment}
+              <div className = {styles.color}>{user}</div>
+              <div>{comment}</div>
             </div>
           ))}
         </div>
@@ -122,7 +125,7 @@ function UploadImage() {
               value={commentInput}
               onChange={(e) => setCommentInput(e.target.value)}
               className={styles.commentInput}
-              placeholder="Write a comment..."
+              placeholder="Add a comment..."
               onKeyPress={handleKeyPress}
             />
             <button

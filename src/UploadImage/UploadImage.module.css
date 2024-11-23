@@ -69,7 +69,7 @@
 }
 
 .unliked i {
-    color: #aaa;
+    color: #c7d2d8;
     font-size: 24px;
     transition: transform 0.2s;
 }
@@ -81,8 +81,8 @@
 
 .iconContainer {
     display: flex;
-    justify-content: flex-start; /* Aligns items to the left */
-    align-items: center; /* Aligns items vertically (optional) */
+    justify-content: flex-start; 
+    align-items: center;
     gap: 10px;
     width: 90%;
 }
@@ -100,17 +100,18 @@
     flex: 1;
     padding: 5px;
     background-color: transparent;
-    outline: none; /* Removes the focus outline */
-    border: none; /* Removes the border */
+    outline: none;
+    border: none; 
     font-family: 'DNFBitBitv2';
     color: #9da1a3;
-
+    font-size: 14px; 
+    padding-left: 15px;
   }
 
   /* Placeholder styles */
 .commentInput::placeholder {
-    color: white; /* Change the placeholder text color */
-    font-size: 12px; /* Adjust the font size */
+    color: white; 
+    font-size: 14px; 
     font-family: 'DNFBitBitv2';
   }
   
@@ -135,8 +136,16 @@
     background-color: #f3f3f3;
     color: #9da1a3;
     margin-bottom: 5px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    padding-left: 20px;
   }
-  
+
+  .color {
+    color: #B9C3C7;
+  }
+
   .comment:last-child {
     border-bottom: none;
   }

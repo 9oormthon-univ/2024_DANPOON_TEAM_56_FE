@@ -26,3 +26,15 @@
     padding: 10px;
     font-size: 16px;
 }
+
+.icon{
+    color: "#C7D2D8";
+}
+
+.icon:hover {
+    transform: scale(1.05);
+}
+
+.icon:active {
+    transform: scale(0.95);
+}

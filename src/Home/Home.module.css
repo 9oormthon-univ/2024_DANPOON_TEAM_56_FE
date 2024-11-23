@@ -1,5 +1,30 @@
 .frame {
     display: flex;
+<<<<<<< HEAD
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #fbf5e5; /* Subtle background */
+}
+
+
+.mission_button {
+    background-color: #95c4d4; 
+}
+  
+
+.bottom_navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+=======
     flex-direction: column;     /* 아이콘과 텍스트를 세로로 배치*/
     justify-content: center;    /* 수평 중앙 정렬 */
     align-items: center;        /* 수직 중앙 정렬*/
@@ -137,4 +162,5 @@
     text-align: center;
     border-radius: 15px;
     box-shadow: 0px 4px 17.4px 0px #00000040;
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398
 }

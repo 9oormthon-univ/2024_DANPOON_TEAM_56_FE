@@ -1,0 +1,28 @@
+.commentFrame {
+    display: flex;
+    flex-direction: row;     /* 아이콘과 텍스트를 세로로 배치*/
+    justify-content: center;    /* 수평 중앙 정렬 */
+    align-items: center;        /* 수직 중앙 정렬*/
+    gap:15px;
+}
+
+.image {
+    color: #C7D2D8;
+    font-size: 35px;
+}
+
+.name {
+    color: #BFBFBF;
+    font-size: 15px;
+}
+
+.play {
+    color: #707070;
+    width: 150px;
+    font-size: 12px;
+}
+
+.date{
+    color: #BFBFBF;
+    font-size: 12px;
+}

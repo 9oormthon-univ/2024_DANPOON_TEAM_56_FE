@@ -1,6 +1,18 @@
 .bottom_navigation {
     position: fixed;
     bottom: 0;
+<<<<<<< HEAD
+    left: 50%; 
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between; 
+    width: 356px; 
+    background-color: #fff;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+=======
     left: 0;
     right: 0;
     height: 8vh;
@@ -12,12 +24,18 @@
     margin-right: auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398
 }
 
 .navButton {
     background: none;
     border: none;
     cursor: pointer;
+<<<<<<< HEAD
+    padding: 10px;
+    font-size: 16px;
+}
+=======
     float: left;
     width: 33%;
     text-align: center;
@@ -26,3 +44,4 @@
     padding: 10px;
     font-size: 16px;
 }
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398

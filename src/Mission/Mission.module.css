@@ -7,7 +7,11 @@
     background-color: #f9f9f9; 
   }
 
+<<<<<<< HEAD
+.ButtonWrapper { /* 이 부분 전체화면 비율과 화면 크기 바뀔 때마다 적용되는 비율이 다름 - 검토필요*/
+=======
 .ButtonWrapper { /* 이 부분 전체화면 비율과 화면 크기 바뀔 때마다 적용되는 비율이 다름 - 검토필요 */
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398
   position: fixed;
   top: 15%;
   left: 43%; 
@@ -27,6 +31,8 @@ button {
   object-fit: cover;
 }
 
+<<<<<<< HEAD
+=======
 .commonButton:hover {
   transform: scale(1.05);
 }
@@ -35,6 +41,7 @@ button {
   transform: scale(0.95); 
 }
 
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398
 .one {
   top: 400px;
   left: 0;

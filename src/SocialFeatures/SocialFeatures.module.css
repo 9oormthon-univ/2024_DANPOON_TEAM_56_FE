@@ -1,0 +1,22 @@
+.frame {
+    width: 310px; /* Consistent width */
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-around; /* Distribute space evenly */
+    align-items: center; /* Align items vertically */
+    background-color: #ffffff; /* Explicit white background */
+    color: #707070; /* Text color */
+    font-family: 'DNFBitBitv2', sans-serif; /* Custom font */
+    padding: 10px 20px; /* Balanced padding */
+    border-radius: 20px; /* Smooth corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space between elements */
+}
+
+.stat {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: center; /* Align items vertically */
+    font-size: 18px; /* Font size for stats */
+    gap: 10px;
+}

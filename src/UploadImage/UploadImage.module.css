@@ -1,17 +1,36 @@
 .imageContainer {
+<<<<<<< HEAD
+    width: 320px;
+=======
     max-width: 500px;
     width: 100%;
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+<<<<<<< HEAD
+    margin-bottom: 100px;
+=======
     margin-bottom: 30px;
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398
     margin-top: 20px;
     border-radius: 20px;
 }
 
+<<<<<<< HEAD
+.icon {
+    width: 25px;
+}
+
+.commentIcon {
+    width: 22px;
+}
+
+
+=======
 .uploadedImage {
     max-width: 90%;
     max-height: 90%;
@@ -24,6 +43,7 @@
     text-align: center;
 }
 
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398
 .uploadWrapper { 
     padding: 10px;
 }
@@ -34,6 +54,38 @@
     border: none;
     cursor: pointer;
     border-radius: 10px;
+<<<<<<< HEAD
+    width: 300px;
+    height: 200px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    display: flex; /* Added for centering the icon */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures uploaded image does not exceed bounds */
+    position: relative; /* Allows precise placement of the image */
+}
+
+.uploadButton:hover {
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3); /* Larger and darker inner shadow */
+}
+
+.uploadedImage {
+    width: 300px;
+    height: auto; /* Adjusts height proportionally to maintain aspect ratio */
+    border-radius: 10px; /* Matches the button's border radius */
+    display: block; /* Ensures proper centering */
+    margin-top: 10px;
+}
+
+
+
+.likeContainer {
+    display: flex;
+	justify-content: flex-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+=======
     width: 310px;
     height: 200px;
 }
@@ -63,15 +115,93 @@
     gap: 13px;
     font-size: 24px;
     transition: transform 0.3s;
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398
 }
 
 .liked i {
     color: red;
+<<<<<<< HEAD
+    font-size: 24px;
+    transition: transform 0.2s;
+=======
     cursor: pointer;
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398
 }
 
 .unliked i {
     color: #aaa;
+<<<<<<< HEAD
+    font-size: 24px;
+    transition: transform 0.2s;
+}
+
+.liked i:hover, 
+.unliked i:hover {
+    transform: scale(1.2);
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: center; /* Aligns items vertically (optional) */
+    gap: 10px;
+    width: 90%;
+}
+
+.commentSection {
+    width: 95%;
+    display: flex;
+    gap: 10px;
+    background-color: #d9d9d9;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .commentInput {
+    flex: 1;
+    padding: 5px;
+    background-color: transparent;
+    outline: none; /* Removes the focus outline */
+    border: none; /* Removes the border */
+    font-family: 'DNFBitBitv2';
+    color: #9da1a3;
+
+  }
+
+  /* Placeholder styles */
+.commentInput::placeholder {
+    color: white; /* Change the placeholder text color */
+    font-size: 12px; /* Adjust the font size */
+    font-family: 'DNFBitBitv2';
+  }
+  
+  .submitButton {
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .commentList {
+    width: 95%;
+    border-radius: 10px;
+    overflow-y: auto;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .comment {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    color: #9da1a3;
+    margin-bottom: 5px;
+  }
+  
+  .comment:last-child {
+    border-bottom: none;
+  }
+=======
     cursor: pointer;
 }
 
@@ -121,3 +251,4 @@
     margin-right: 20px;
     font-size: 22px;
 }
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398

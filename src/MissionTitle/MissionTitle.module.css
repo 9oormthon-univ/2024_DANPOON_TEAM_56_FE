@@ -1,10 +1,17 @@
 .flipCard {
     background-color: transparent;
     width: 330px;
+<<<<<<< HEAD
+    height: 165px;
+    border-radius: 20px;
+    perspective: 1000px; 
+    overflow: hidden;
+=======
     height: 200px;
     border-radius: 20px;
     perspective: 1000px; 
     overflow: hidden; 
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398
 }
 
 .flipCardInner {
@@ -30,6 +37,25 @@
   
 .flipCardFront {
     background-color: #9bc0d8;
+<<<<<<< HEAD
+    line-height: 110%;
+  }
+  
+  .title {
+    color: white;
+    font-size: 25px;
+    text-shadow: -2px 2px gray;
+  }
+
+  .title>span {
+    color: #1C6080;
+  }
+
+  .date {
+    color: #DBDBDB;
+    font-size: 18px;
+    text-shadow: -2px 2px gray;
+=======
     color: #CFD7DA;
     font-size: 14px;
   }
@@ -38,11 +64,34 @@
     background-color: #fff3ae;
     color: black;
     transform: rotateY(180deg);
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398
   }
 
   .missionTitle {
     background-color: white;
     border-radius: 20px;
+<<<<<<< HEAD
+    margin-top: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+    padding: 2px;
+    color: #545454;
+  }
+
+.flipCardBack {
+    background-color: #fff3ae;
+    color: #545454; 
+    transform: rotateY(180deg);
+    line-height: 50%;
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+  }
+
+=======
     padding: 1px;
     margin: 5px;
     color: #545454;
@@ -54,3 +103,4 @@
     font-size: 20px;
     text-shadow: -2px 2px gray;
   }
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398

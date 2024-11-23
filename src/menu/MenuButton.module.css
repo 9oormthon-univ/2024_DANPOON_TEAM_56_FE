@@ -3,8 +3,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+<<<<<<< HEAD
+    width: 350px; 
+    height: 100px;
+=======
     width: 140px; 
     height: 140px;
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398
     border-radius: 20px;
     border: none;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
@@ -12,6 +17,10 @@
     text-align: center;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease; 
+<<<<<<< HEAD
+    margin-bottom: 50px;
+=======
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398
 }
 
 .menu_button:hover {
@@ -24,10 +33,13 @@
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08); 
 }
 
+<<<<<<< HEAD
+=======
 .menu_button .icon {
     font-size: 20px;
     margin-top: 10px;
 }
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398
 
 .button_text {
     font-size: 20px;
@@ -36,6 +48,10 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
+<<<<<<< HEAD
+
+
+=======
 .mission_button {
     background-color: #99B1C1; 
 }
@@ -51,3 +67,4 @@
 .community_button {
     background-color: #A5DEBB; 
 }
+>>>>>>> 16df5de9632931333947c40843a50a70e1dde398

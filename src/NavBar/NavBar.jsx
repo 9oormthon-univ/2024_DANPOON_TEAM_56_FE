@@ -8,9 +8,9 @@ function NavBar () {
     return(
         <>
             <footer className={styles.bottom_navigation}>
-                <button className={styles.navButton} onClick={() => navigate('/levels')} ><FontAwesomeIcon icon={faBars} size="lg" className={styles.icon} /></button>
-                <button className={styles.navButton} onClick={() => navigate('/home')} ><FontAwesomeIcon icon={faHouse} size="lg" className={styles.icon} /></button>
-                <button className={styles.navButton} onClick={() => navigate('/missionpage')} ><FontAwesomeIcon icon={faUser} size="lg" className={styles.icon} /></button>
+                <button className={styles.navButton} onClick={() => navigate('/levels')} ><FontAwesomeIcon icon={faBars} size="lg" className={styles.iconbutton} /></button>
+                <button className={styles.navButton} onClick={() => navigate('/home')} ><FontAwesomeIcon icon={faHouse} size="lg" className={styles.iconbutton} /></button>
+                <button className={styles.navButton} onClick={() => navigate('/missionpage')} ><FontAwesomeIcon icon={faUser} size="lg" className={styles.iconbutton} /></button>
             </footer>
         </>
     )

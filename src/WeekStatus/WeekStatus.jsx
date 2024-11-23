@@ -2,54 +2,37 @@ import React from 'react';
 import styles from './WeekStatus.module.css';
 
 function WeekStatus({ statuses }) {
-
   const getWeekDates = () => {
     const weekDates = [];
     const today = new Date();
-    const dayOfWeek = today.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
-    const mondayDiff = dayOfWeek === 0 ? -6 : 1 - dayOfWeek; // Adjust to Monday if today is Sunday
+    const dayOfWeek = today.getDay();
+    const mondayDiff = dayOfWeek === 0 ? -6 : 1 - dayOfWeek;
 
-    // Get the start of the week (Monday)
     const startOfWeek = new Date(today);
     startOfWeek.setDate(today.getDate() + mondayDiff);
 
-    // Generate dates from Monday to Sunday
     for (let i = 0; i < 7; i++) {
       const date = new Date(startOfWeek);
       date.setDate(startOfWeek.getDate() + i);
       weekDates.push(date);
     }
-
     return weekDates;
   };
-    // 예제 실행
-    const today = new Date(); // 오늘 날짜
-    const week = getWeekDates(today);
-    
-    console.log("이번 주 날짜:");
-    week.forEach(date => {
-        console.log(date.toISOString().split('T')[0]); // 날짜 형식: YYYY-MM-DD
-    });
-    
-  // Calculate the week starting from Sunday
-  const startOfWeek = new Date(today);
-  startOfWeek.setDate(today.getDate() - today.getDay());
 
-  // Generate an array of dates for the week
-  const daysOfWeek = Array.from({ length: 7 }, (_, i) => {
-    const date = new Date(startOfWeek);
-    date.setDate(startOfWeek.getDate() + i);
-    return date;
-  });
+  const isSameDay = (date1, date2) =>
+    date1.getFullYear() === date2.getFullYear() &&
+    date1.getMonth() === date2.getMonth() &&
+    date1.getDate() === date2.getDate();
 
-  // Map weekdays abbreviations
-  const weekdays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
+  const today = new Date();
+  const weekDates = getWeekDates();
+  const weekdays = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
 
   return (
     <div className={styles.container}>
-      {daysOfWeek.map((date, index) => {
-        const isToday = date.toDateString() === today.toDateString();
-        const dayStatus = statuses[index]; // Props for statuses
+      {weekDates.map((date, index) => {
+        const isToday = isSameDay(date, today);
+        const dayStatus = statuses[index];
 
         return (
           <div key={index} className={styles.day}>

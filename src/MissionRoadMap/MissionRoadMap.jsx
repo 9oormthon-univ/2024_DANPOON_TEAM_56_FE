@@ -7,11 +7,9 @@ import NavBar from '../NavBar/NavBar';
 function MissionRoadMap () {
     return (
         <>  
-            <Status UserName="Minji" Participation="12" MissionNum="2" clearLv="7" />
+            <Status UserName="John" Participation="3" MissionNum="2" clearLv="7" />
             <Mission clearedMission = {3} />
-            <NavBar />
-
-        
+            <NavBar />        
         </>
     )
 }

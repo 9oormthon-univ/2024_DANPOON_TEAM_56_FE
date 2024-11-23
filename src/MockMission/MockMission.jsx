@@ -1,33 +1,20 @@
-import styles from "./UploadImage.module.css";
-import { useState, useRef, useEffect } from "react";
+import styles from "./MockMission.module.css";
+import { useState } from "react";
 
-import cameraIcon from "../images/camera.png";
 import commentIcon from "../images/comment.png";
 import submitIcon from "../images/submit.png";
 
-function UploadImage() {
-  const user = "Tom"
-  const [image, setImage] = useState(null);
+function MockMission({src}) {
+  const user = "Tom";
   const [liked, setLiked] = useState(false);
   const [isCommenting, setIsCommenting] = useState(false);
   const [commentInput, setCommentInput] = useState("");
   const [comments, setComments] = useState([]);
 
-  const fileInputRef = useRef(null);
-
-  const handleImageUpload = (e) => {
-    const file = e.target.files[0];
-    if (file && file.type.startsWith("image/")) {
-      setImage(Object.assign(file, { preview: URL.createObjectURL(file) }));
-    } else {
-      alert("Please upload a valid image file (JPEG, PNG, etc.).");
-    }
-  };
-
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
       event.preventDefault();
-      handleCommentSubmit(); 
+      handleCommentSubmit();
     }
   };
 
@@ -45,45 +32,18 @@ function UploadImage() {
       return;
     }
     setComments([...comments, commentInput.trim()]);
-    setCommentInput(""); 
+    setCommentInput("");
   };
-
-  useEffect(() => {
-    return () => {
-      if (image) {
-        URL.revokeObjectURL(image.preview);
-      }
-    };
-  }, [image]);
 
   return (
     <div>
       <div className={styles.imageContainer}>
-        {image ? (
-          <img
-            src={image.preview}
-            alt="Uploaded Preview"
-            className={styles.uploadedImage}
-          />
-        ) : (
-          <div className={styles.uploadWrapper}>
-            <button
-              type="button"
-              className={styles.uploadButton}
-              id="optional"
-              onClick={() => fileInputRef.current.click()}
-            >
-              <img className={styles.icon} src={cameraIcon} alt="Upload" />
-            </button>
-            <input
-              ref={fileInputRef}
-              type="file"
-              accept="image/*"
-              style={{ display: "none" }}
-              onChange={handleImageUpload}
-            />
-          </div>
-        )}
+        {/* Display the example image */}
+        <img
+          src={src}
+          alt="Example Preview"
+          className={styles.uploadedImage}
+        />
         <div className={styles.iconContainer}>
           <div className={styles.likeContainer}>
             <span
@@ -110,7 +70,7 @@ function UploadImage() {
         <div className={styles.commentList}>
           {comments.map((comment, index) => (
             <div key={index} className={styles.comment}>
-              <div className = {styles.color}>{user}</div>
+              <div className={styles.color}>{user}</div>
               <div>{comment}</div>
             </div>
           ))}
@@ -140,4 +100,4 @@ function UploadImage() {
   );
 }
 
-export default UploadImage;
+export default MockMission;

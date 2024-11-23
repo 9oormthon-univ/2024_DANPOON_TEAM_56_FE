@@ -1,19 +1,31 @@
 .frame {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full viewport height */
-    background-color: #fbf5e5; /* Subtle background */
-    overflow: auto; /* Allows scrolling */
-    scrollbar-width: none; /* Hides scrollbar in Firefox */
-    -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 100vh; 
+  background-color: #fbf5e5;
+  overflow-y: scroll; 
+  padding-bottom: 80px; 
+}
+
+/* WebKit Browsers (Chrome, Edge, Safari) */
+body::-webkit-scrollbar, .frame::-webkit-scrollbar {
+  width: 0;
+  height: 0; 
+  display: none;
 }
 
 
-  
-  .frame::-webkit-scrollbar {
-    display: none; /* Hides scrollbar in Chrome/Safari */
-  }
-  
+.innerframe1 {
+  margin-top: 20px;
+}
+
+.innerframe2 {
+  margin-top: 10px;
+}
+
+.innerframe3 {
+  margin-top: 10px;
+  margin-bottom: 300px;
+}

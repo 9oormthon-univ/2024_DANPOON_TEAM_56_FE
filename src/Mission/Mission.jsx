@@ -9,6 +9,7 @@ import Button5 from '../images/Button5.png';
 import Button6 from '../images/Button6.png';
 import Button7 from '../images/Button7.png';
 import Button8 from '../images/Button8.png';
+import Button9 from '../images/Button9.png';
 
 import { useNavigate } from "react-router-dom";
 
@@ -23,6 +24,7 @@ function Mission({ clearedMission }) {
         { id: 6, src: Button6, style: styles.six },
         { id: 7, src: Button7, style: styles.seven },
         { id: 8, src: Button8, style: styles.eight },
+        { id: 9, src: Button9, style: styles.nine },
     ];
     const navigate = useNavigate();
 

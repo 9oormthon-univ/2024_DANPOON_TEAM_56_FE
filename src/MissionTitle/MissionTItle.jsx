@@ -9,7 +9,7 @@ function MissionTitle ({questNum}) {
             <div className={styles.flipCard}>
                 <div className={styles.flipCardInner}>
                     <div className = {styles.flipCardFront}>
-                        <p className = {styles.title}>Quest <span>{questNum}</span></p>
+                        <p className = {styles.title}>Mission <span>{questNum}</span></p>
                         <p className = {styles.date}>{date}</p>
                         <div className={styles.missionTitle}>
                             <p>Go to a Cafe !</p>

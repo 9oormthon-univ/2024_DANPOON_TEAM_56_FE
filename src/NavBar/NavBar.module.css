@@ -1,0 +1,28 @@
+.bottom_navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 8vh;
+    background-color: #fff;
+    padding: 1px 0px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 373px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.navButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: left;
+    width: 33%;
+    text-align: center;
+    height: 50px;
+    line-height: 42px;
+    padding: 10px;
+    font-size: 16px;
+}

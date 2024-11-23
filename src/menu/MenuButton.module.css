@@ -1,0 +1,53 @@
+.menu_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 140px; 
+    height: 140px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.menu_button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu_button:active {
+    transform: scale(0.95); 
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08); 
+}
+
+.menu_button .icon {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.button_text {
+    font-size: 20px;
+    font-size: 16px;
+    font-family: 'DNFBitBitv2', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.mission_button {
+    background-color: #99B1C1; 
+}
+
+.mission_check_button {
+    background-color: #E4A198; 
+}
+
+.my_page_button {
+    background-color: #EAC475;
+}
+
+.community_button {
+    background-color: #A5DEBB; 
+}

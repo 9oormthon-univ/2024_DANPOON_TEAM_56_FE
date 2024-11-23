@@ -1,0 +1,28 @@
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #fbf5e5; /* Subtle background */
+}
+
+.level1 {
+    background-color: #FFFFFF;
+}
+
+.level2 {
+    background-color: #E6F1F7;
+}
+
+.level3 {
+    background-color: #C9E4F1;
+}
+
+.level4 {
+    background-color: #95CDE7; 
+}
+
+.level5 {
+    background-color: #7AB8D6;
+}

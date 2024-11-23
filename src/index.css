@@ -1,13 +1,19 @@
-body {
+html, body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 100vw; /* 화면의 너비를 디바이스 너비로 고정 */
+  max-width: 375px; /* 최대 너비를 모바일 크기로 고정 */
+  height: 100vh; /* 화면 전체 높이 */
+  margin: 0 auto; /* 화면을 가운데 정렬 */
+  overflow-x: hidden;
+  font-family: 'DNFBitBitv2', Arial, sans-serif; /* 기본 글꼴 */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@font-face {
+  font-family: 'DNFBitBitv2';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf') format('opentype');
 }
+

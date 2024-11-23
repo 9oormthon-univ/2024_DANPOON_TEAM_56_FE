@@ -1,22 +1,28 @@
 .bottom_navigation {
     position: fixed;
     bottom: 0;
-    left: 50%; 
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between; 
-    width: 356px; 
+    left: 0;
+    right: 0;
+    height: 8vh;
     background-color: #fff;
-    padding: 10px;
+    padding: 1px 0px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 373px;
+    margin-left: auto;
+    margin-right: auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navButton {
     background: none;
     border: none;
     cursor: pointer;
+    float: left;
+    width: 33%;
+    text-align: center;
+    height: 50px;
+    line-height: 42px;
     padding: 10px;
     font-size: 16px;
 }

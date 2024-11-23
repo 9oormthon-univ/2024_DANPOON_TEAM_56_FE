@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import First from "./Login/Login";
+import Login from "./Login/Login";
 import Home from "./Home/Home";
 import LevelButtonsPage from './LevelButtonsPage/LevelButtonsPage';
 import MissionRoadMap from './MissionRoadMap/MissionRoadMap';
@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<First />} />
+        <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/levels" element={<LevelButtonsPage />} />
         <Route path="/missionroadmap" element={<MissionRoadMap />} />

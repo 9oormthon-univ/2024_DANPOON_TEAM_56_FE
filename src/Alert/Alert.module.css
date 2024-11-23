@@ -1,0 +1,29 @@
+.social {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+.social img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+}
+
+.name {
+    color: #a9a9a9;
+    margin: 0; 
+    font-size: 14px;
+}
+
+.text {
+    width: 160px;
+    color: #707070;
+    font-size: 11px;
+    margin: 0;
+}
+
+.time {
+    color: #d3d3d3;
+    font-size: 12px; 
+}

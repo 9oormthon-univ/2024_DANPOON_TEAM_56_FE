@@ -1,25 +1,30 @@
 import styles from "./SocialFeatures.module.css";
+import Alert from "../Alert/Alert";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faComment, faHeart } from "@fortawesome/free-regular-svg-icons";
+import UserIcon from "../images/UserIcon.png";
 
-function SocialFeatures ({likes, comments, view}){
+function SocialFeatures() {
+    // Mock data array
+    const mockdata = [
+        { img: UserIcon, name: "Henry88", text: "commented on your post", time: 2 },
+        { img: UserIcon, name: "Clala127", text: "liked your post", time: 5 },
+        { img: UserIcon, name: "User123", text: "commented on your post", time: 10 },
+        { img: UserIcon, name: "ExtraUser", text: "shared your post", time: 15 },
+    ];
+
     return (
         <div className={styles.frame}>
-                <div className={styles.stat}>
-                    <FontAwesomeIcon icon={faHeart}  className={styles.icon} />
-                    <p>{likes}</p>
-                </div>
-                <div className={styles.stat}>
-                    <FontAwesomeIcon icon={faComment}  className={styles.icon} />
-                    <p>{comments}</p>
-                </div>
-                <div className={styles.stat}>
-                    <FontAwesomeIcon icon={faEye}  className={styles.icon} /> 
-                    <p>{view}</p> 
-                </div>
+            {mockdata.slice(0, 3).map((item, index) => ( // slice to limit to 3 items
+                <Alert
+                    key={index} 
+                    img={item.img}
+                    name={item.name}
+                    text={item.text}
+                    time={item.time}
+                />
+            ))}
         </div>
-    )
+    );
 }
 
 export default SocialFeatures;

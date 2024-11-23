@@ -1,26 +1,16 @@
 .imageContainer {
-<<<<<<< HEAD
     width: 320px;
-=======
-    max-width: 500px;
-    width: 100%;
->>>>>>> 16df5de9632931333947c40843a50a70e1dde398
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-<<<<<<< HEAD
     margin-bottom: 100px;
-=======
-    margin-bottom: 30px;
->>>>>>> 16df5de9632931333947c40843a50a70e1dde398
     margin-top: 20px;
     border-radius: 20px;
 }
 
-<<<<<<< HEAD
 .icon {
     width: 25px;
 }
@@ -30,20 +20,6 @@
 }
 
 
-=======
-.uploadedImage {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 20px;
-}
-
-.placeholderText {
-    color: #aaa;
-    font-size: 14px;
-    text-align: center;
-}
-
->>>>>>> 16df5de9632931333947c40843a50a70e1dde398
 .uploadWrapper { 
     padding: 10px;
 }
@@ -54,7 +30,6 @@
     border: none;
     cursor: pointer;
     border-radius: 10px;
-<<<<<<< HEAD
     width: 300px;
     height: 200px;
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
@@ -85,52 +60,16 @@
     margin-top: 5px;
     margin-bottom: 5px;
     cursor: pointer;
-=======
-    width: 310px;
-    height: 200px;
-}
-
-.cameraicon {
-    font-size: 33px;
-}
-
-.cameraicon:hover {
-    transform: scale(1.2);
-    transition: transform 0.2s;
-}
-
-.cameraicon:active {
-    transform: scale(0.8);
-    transition: transform 0.2s;
-}
-
-.likeContainer {
-    width: 90%;
-    margin-bottom: 5px;
-}
-
-.iconSection {
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    font-size: 24px;
-    transition: transform 0.3s;
->>>>>>> 16df5de9632931333947c40843a50a70e1dde398
 }
 
 .liked i {
     color: red;
-<<<<<<< HEAD
     font-size: 24px;
     transition: transform 0.2s;
-=======
-    cursor: pointer;
->>>>>>> 16df5de9632931333947c40843a50a70e1dde398
 }
 
 .unliked i {
     color: #aaa;
-<<<<<<< HEAD
     font-size: 24px;
     transition: transform 0.2s;
 }
@@ -201,54 +140,3 @@
   .comment:last-child {
     border-bottom: none;
   }
-=======
-    cursor: pointer;
-}
-
-.comment_icon {
-    cursor: pointer;
-    color: #aaa;
-}
-
-.commentActive {
-    cursor: pointer;
-    color: #545454;
-}
-
-.liked i:hover, 
-.unliked i:hover,
-.comment_icon:hover {
-    transform: scale(1.2);
-}
-
-.comment {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #D9D9D9;
-    width: 310px;
-    height: 35px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-}
-
-.comment_input {
-    border: none;
-    font-family: 'DNFBitBitv2', sans-serif;
-    background-color: #D9D9D9;
-    margin-left: 20px;
-    font-size: 16px;
-}
-
-.comment_input::placeholder {
-    color: #FFFFFF;
-}
-
-.submit_icon {
-    color: #FFFFFF;
-    cursor: pointer;
-    margin-right: 20px;
-    font-size: 22px;
-}
->>>>>>> 16df5de9632931333947c40843a50a70e1dde398

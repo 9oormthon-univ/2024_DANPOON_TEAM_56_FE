@@ -34,7 +34,7 @@ function Home() {
 
     const fetchUserInfo = async () => {
         try {
-            const response = await axios.post(
+            const response = await axios.get(
                 "https://klay-ten.vercel.app/api/info",
                 {},
                 {
